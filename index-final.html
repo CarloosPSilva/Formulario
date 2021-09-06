@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cadastro | Biblioteca</title>
+    <link rel="stylesheet" href="estilo.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="wrapper" autocomplete="off">
+        <!-- Formulário -->
+        <form action="" id="formulario" method="POST" name="formulario" autocomplete="off">
+            <legend>
+                Cadastro Senai
+            </legend>
+            <div class="input-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Insira seu nome completo" autocomplete="off" />
+            </div>
+            <div class="input-group">
+                <label for="apelido">Apelido:</label>
+                <input type="text" id="apelido" placeholder="Insira seu apelido" autocomplete="off" />
+            </div>
+
+            <div class="input-group">
+                <label for="dataDia">Data:</label>
+                <input type="number" id="dia" placeholder="Dia" min="1" max="31" autocomplete="off" />
+                <input type="number" id="mes" placeholder="Mes" maxlength="2" min="1" max="12" autocomplete="off" />
+                <input type="number" id="ano" placeholder="Ano" min="1990" max="2021" autocomplete="off" />
+            </div>
+            <div class="input-group">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" \ placeholder="xxx.xxx.xxx-xx" pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}" \ title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+            </div>
+
+            <div class="colunas">
+                <div class="input-group">
+                    <label for="time">Time do coração:</label>
+                    <select name="time" id="time">
+                        <option value="1">.....</option>
+                        <option value="2">Palmeriras</option>
+                        <option value="3">Time</option>
+                        <option value="4"> Time</option>
+                        </select>
+                    <fieldset>
+                        <legend>Esporte</legend>
+                        <label id="sporte" for="esporte">Esporte de interesse:</label>
+                        <input type="checkbox" name="sport" id="1">Futebol<br>
+                        <input type="checkbox" value="checked" name="sport" id="2">Vôlei<br>
+                        <input type="checkbox" value="checked" name="sport" id="3">Basquete<br>
+                        <input type="checkbox" value="checked" name="sport" id="4">Futsal<br>
+                        <input type="checkbox" value="checked" name="sport" id="5">Automobilismo<br>
+                        <input type="checkbox" value="checked" name="sport" id="6">Artes Marciais<br>
+                        <input type="checkbox" value="checked" name="sport" id="7">Natação<br>
+                    </fieldset>
+
+                </div>
+            </div>
+            <div class="footer">
+                <button type="submit" onclick="validar()" class="botao">  Enviar  </button>
+            </div>
+        </form>
+        <script src="/javascritp.js"></script>
+
+    </div>
+
+</body>
+
+</html>
