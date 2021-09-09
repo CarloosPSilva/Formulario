@@ -14,7 +14,7 @@
 <body>
     <div class="wrapper" autocomplete="off">
         <!-- Formulário -->
-        <form action="" id="formulario" method="POST" name="formulario" autocomplete="off">
+        <form action="#" id="formulario" method="POST" onsubmit="validar()" name="formulario" autocomplete="off">
             <legend>
                 Cadastro Senai
             </legend>
@@ -27,11 +27,11 @@
                 <input type="text" id="apelido" placeholder="Insira seu apelido" autocomplete="off" />
             </div>
 
-            <div class="input-group">
+            <div class="input-group data-group">
                 <label for="dataDia">Data:</label>
-                <input type="number" id="dia" placeholder="Dia" min="1" max="31" autocomplete="off" />
-                <input type="number" id="mes" placeholder="Mes" maxlength="2" min="1" max="12" autocomplete="off" />
-                <input type="number" id="ano" placeholder="Ano" min="1990" max="2021" autocomplete="off" />
+                <input class="data" type="text" id="dia" placeholder="Dia" maxlength="2" min="1" max="31" autocomplete="off" />/
+                <input class="data" type="text" id="mes" placeholder="Mes" maxlength="2" min="1" max="12" autocomplete="off" />/
+                <input class="data" type="text" id="ano" placeholder="Ano" maxlength="4" min="1990" max="2021" autocomplete="off" />
             </div>
             <div class="input-group">
                 <label for="cpf">CPF:</label>
@@ -42,10 +42,10 @@
                 <div class="input-group">
                     <label for="time">Time do coração:</label>
                     <select name="time" id="time">
-                        <option value="1">.....</option>
-                        <option value="2">Palmeriras</option>
-                        <option value="3">Time</option>
-                        <option value="4"> Time</option>
+                        <option value="">.....</option>
+                        <option value="1">Palmeriras</option>
+                        <option value="2">São Paulo</option>
+                        <option value="3">Vasco</option>
                         </select>
                     <fieldset>
                         <legend>Esporte</legend>
@@ -62,9 +62,13 @@
                 </div>
             </div>
             <div class="footer">
-                <button type="submit" onclick="validar()" class="botao">  Enviar  </button>
+                <button type="submit" class="botao">  Enviar  </button>
             </div>
+            <pre id="result">
+
+            </pre>
         </form>
+
         <script src="/funcoes.js"></script>
 
     </div>

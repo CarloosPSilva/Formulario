@@ -9,19 +9,20 @@ input {
 }
 
 body {
-    background: linear-gradient(180deg, #fe8c00 0%, #f83600 100%);
-    background-size: 100%;
+    background: #f83600;
+    background-size: auto;
     margin: 0;
-    height: 100%;
+    height: auto;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
+    padding: 1rem;
 }
 
 .wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
+    height: auto;
 }
 
 #formulario {
@@ -59,6 +60,16 @@ body {
     padding: 8px 10px;
     display: block;
     width: 100%;
+}
+
+.data {
+    width: 50px !important;
+    margin: 0 15px;
+}
+
+.data-group {
+    display: flex;
+    align-items: center;
 }
 
 .input-groupL input {
@@ -112,4 +123,13 @@ body {
 
 .botao:hover {
     background: #5988bd;
+}
+
+#result {
+    background: #dedddd;
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    padding: 8px 10px;
+    display: none;
+    width: 100%;
 }
